@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PiggyVest</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav>
+                        <div class="site-navbar">
+                            <img src="img/piggy.png" alt="" class="logo">
+                            <input type="checkbox" name="" id="chk">
+                            <label for="chk" class="show-menu-btn">
+                                <i class="fa fa-navicon"></i>
+                            </label>
+                            <ul class="menu" style="list-style-type: none;">
+                                <li><a href="#" class="navbar-link">About</a></li>
+                                <li><a href="#" class="navbar-link">Stories</a></li>
+                                <li><a href="#" class="navbar-link">FAQ</a></li>
+                                <li><a href="#" class="navbar-link">Blog</a></li>
+                                <li><a href="#" class="navbar-link">Login</a></li>
+                                <li><a href="#" class="navbar-link create">Create a free Account</a></li>
+                                <label for="chk" class="hide-menu-btn">
+                                    <i class="fa fa-times"></i>
+                                </label>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-5">
+                    <div class="header-image">
+                        <img src="img/better.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="header-main">
+                        <h1 class="hero-text">The Better Way <br> to save and Invest</h1>
+                    </div>
+                    <div class="header-body">
+                        <p class="earning">Earn 10% - 15.5% interests on savings.</p>
+                        <p class="earning">Earn over 25% return on investments.</p>
+                    </div>
+                    <div class="download-links">
+                        <a href="#"><img src="img/iosbadge-101-image.png" alt="" class="img-fluid"></a>
+                        <a href="#"><img src="img/google-play-badge.png" alt="" class="img-fluid"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-5">
+                    <form action="" id="interest-form">
+                        <div class="form-field">
+                            <label for="amount">Amount to Invest</label>
+                            <span class="icon">&#8358;</span>
+                            <input type="number" name="amount" id="amount" required>
+                        </div>
+                        <div class="form-field">
+                            <label for="plan">Investment Type</label>
+                            <select name="" id="plan" required>
+                                <option value="piggy">Piggy</option>
+                                <option value="safe">Safe</option>
+                                <option value="target">Target</option>
+            <option value="flexn">Flexn</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="duration">Duration</label>
+                            <select name="" id="duration" required>
+                                <option value="1">1 months</option>
+                                <option value="2">2 months</option>
+                                <option value="3">3 months</option>
+<option value="4">4 months</option>
+<option value="5">5 months</option>
+<option value="6">6 months</option>
+<option value="8">7 months</option>
+<option value="9">9 months</option>
+<option value="10">10 months</option>
+<option value="11">11 months</option>
+<option value="12">12 months</option>
+                            </select>
+                        </div>
+                        <button type="submit" id="calculate" >Calculate</button>
+                    </form>
+
+                    <div class="payback-results mt-5">
+                        <h6 class="mb-3">Payback Results</h6>
+                        <div class="results d-flex justify-content-around mb-4">
+                            <span>
+                                <h6>Total Value</h6>
+                                <h5 class="font-weight-bold" id="message" >0</h5>
+                            </span>
+
+                            <span>
+                                <h6>Interest Value</h6>
+                                <h5 class="font-weight-bold" id="interest" >0</h5>
+                            </span>
+                        </div>
+                        <div id="piechart"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <div class="media">
+                        <h1><i class="fa fa-check"></i></h1>
+                        <div class="media-body">
+                            <h4>Your Security is our Priority</h4>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, rerum. Aspernatur,
+                                nostrum. Itaque reprehenderit ipsa veniam. Iure non itaque pariatur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <script src="js/jquery.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+</body>
+
+</html>
